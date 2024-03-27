@@ -84,12 +84,8 @@
      (("gnutls" "gnutls-client-server-use-case" "gnutls-crypto-layers" "gnutls-handshake-sequence" "gnutls-handshake-state" "gnutls-internals" "gnutls-layers" "gnutls-logo" "gnutls-modauth" "gnutls-x509" "pkcs11-vision") . "https://gnutls.org/manual/html_node/%e")
      (("gnutls-guile") . "https://gnutls.gitlab.io/guile/manual/html_node/%e")
      (("groff") . "https://www.gnu.org/software/%m/manual/%m.html.node/%e")
-     (("grub" "grub-dev" ;; "legacy"
-        "multiboot" "multiboot2")
-       . "https://www.gnu.org/software/grub/manual/%m/html_node/%e")
-     (("guile" ;; "r5rs"
-        )
-       . "https://www.gnu.org/software/%m/manual/html_node/%e")
+     (("grub" "grub-dev" "multiboot" "multiboot2") . "https://www.gnu.org/software/grub/manual/%m/html_node/%e")
+     (("guile") . "https://www.gnu.org/software/%m/manual/html_node/%e")
      (("guile-algorithms") . "https://guile-algorithms.lajszczak.dev/%e")
      (("guile-email") . "https://guile-email.systemreboot.net/manual/dev/en/%e")
      (("guile-proba") . "https://luis-felipe.gitlab.io/%m/manual/%e")
