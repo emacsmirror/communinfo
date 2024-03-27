@@ -30,22 +30,11 @@
 (require 'communinfo)
 (require 'ert)
 
-(ert-deftest communinfo-test-urls-use-node ()
-  "If the URL-specification is a string, it should contain `%e'."
-  (map-values-apply
-    (lambda (url-spec)
-      (if (stringp url-spec)
-        (should (string-match-p "%e" url-spec))))
-    communinfo))
-
-(ert-deftest communinfo-test-urls-use-manual ()
-  "If multiple manuals are associated at once, the URL-specification
-should contain `%m'."
-  (seq-map
-    (pcase-lambda (`(,manuals . ,url-spec))
-      (if (cdr manuals)
-        (should (string-match-p "%m" url-spec))))
-    communinfo))
+(ert-deftest communinfo-test-manuals-unique ()
+  "Each associated manual should be unique."
+  (=
+    (length (apply #'append (map-keys communinfo)))
+    (length (apply #'append (seq-uniq (map-keys communinfo))))))
 
 (ert-deftest communinfo-test-online ()
   "Associated URLs should be online."
@@ -72,6 +61,23 @@ should contain `%m'."
                     (url-retrieve-synchronously url t t 30)
                     (error (plist-get err 'error)))))))
           (message "communinfo-test: skip: `%s'" node))))
+    communinfo))
+
+(ert-deftest communinfo-test-urls-use-manual ()
+  "If multiple manuals are associated at once, the URL-specification
+should contain `%m'."
+  (seq-map
+    (pcase-lambda (`(,manuals . ,url-spec))
+      (if (cdr manuals)
+        (should (string-match-p "%m" url-spec))))
+    communinfo))
+
+(ert-deftest communinfo-test-urls-use-node ()
+  "If the URL-specification is a string, it should contain `%e'."
+  (map-values-apply
+    (lambda (url-spec)
+      (if (stringp url-spec)
+        (should (string-match-p "%e" url-spec))))
     communinfo))
 
 (provide 'communinfo-test)
