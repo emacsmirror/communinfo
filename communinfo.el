@@ -44,13 +44,6 @@
 ;;; Roadmap:
 
 ;; - Test non-Top node names.
-;; - Option: Use short or long URL?
-;; - Option: Link to which version? (Number, latest release or
-;;   development?)
-;; - Support manuals that are given by single HTMLs only.
-;; - Option: Use single-HTML or HTML-per-node?
-;; - Make `Info-copy-current-node-name' copy URL for certain prefix
-;;   argument.
 
 ;;; Code:
 
