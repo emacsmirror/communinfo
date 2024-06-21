@@ -7,7 +7,7 @@
 ;; Homepage: https://codeberg.org/mekeor/emacs-communinfo
 ;; Keywords: docs
 ;; Maintainer: Mekeor Melire <mekeor@posteo.de>
-;; Package-Requires: ((emacs "30.0.50"))
+;; Package-Requires: ((emacs "30"))
 ;; SPDX-License-Identifier: GPL-3.0-or-later
 ;; Version: 0.0.1
 
@@ -39,7 +39,7 @@
 ;;   (require 'info)
 ;;   (require 'communinfo)
 ;;
-;;   (setopt Info-url-alist communinfo)
+;;   (setopt Info-url-alist communinfo-url-alist)
 
 ;;; Roadmap:
 
@@ -55,7 +55,7 @@
       "cgdb-split.html"
       (concat "cgdb-split/" encoded-node))))
 
-(defconst communinfo
+(defconst communinfo-url-alist
   '( (("3dldf") . "https://gnu.org/s/%m/manual/user_ref/%e")
      (("8sync" "alive" "anubis" "artanis" "autoconf" "autogen" "automake" "bash" "bison" "ccd2cue" "cflow" "chess" "combine" "complexity" "complexity" "coreutils" "cpio" "dico" "diffutils" "emacs-muse" "g-golf" "gama" "gawk" "gcal" "gettext" "gnubg" "gnubik" "gnulib" "gperf" "grep" "groff" "gsasl" "gsl" "gsrc" "gss" "guile" "guile" "guile-rpc" "gv" "gzip" "hello" "idutils" "inetutils" "libc" "libextractor" "libidn" "libmicrohttpd" "librejs" "libtasn1" "libtool" "lightning" "liquidwar6" "m4" "mailutils" "make" "mdk" "mes" "parted" "proxyknife" "pspp" "pyconfigure" "rcs" "recutils" "remotecontrol" "rottlog" "rottlog" "rush" "screen" "screen" "sed" "sharutils" "shepherd" "sourceinstall" "sqltutor" "tar" "teseq" "units" "vc-dwim" "wdiff" "wdiff" "websocket4j" "wget" "xboard" "xboard") . "https://gnu.org/s/%m/manual/html_node/%e")
      (("Xlibscm" "hobbit" "r5rs" "scm" "slib") . "https://people.csail.mit.edu/jaffer/%m/%e")

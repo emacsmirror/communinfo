@@ -1,15 +1,11 @@
-;;; communinfo-test.el -*- lexical-binding: t; -*-
+;;; communinfo-test.el --- Tests for communinfo  -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2024 Free Software Foundation, Inc.
 
 ;; Author: Mekeor Melire <mekeor@posteo.de>
-;; Created: 2024
 ;; Homepage: https://codeberg.org/mekeor/emacs-communinfo
-;; Keywords: docs
 ;; Maintainer: Mekeor Melire <mekeor@posteo.de>
-;; Package-Requires: ((emacs "30.0.50"))
 ;; SPDX-License-Identifier: GPL-3.0-or-later
-;; Version: 0.0.1
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License as
