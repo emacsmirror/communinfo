@@ -45,7 +45,12 @@
 ;;; Code:
 
 (defun communinfo-url-cgdb (_ node encoded-node)
-  "Associate `cgdb' manual nodes with URL."
+  "Associate `cgdb' manual nodes with URL.
+
+NODE is the name of the `cgbd' info manual node.
+ENCODED-NODE is the URL-encoding of NODE.
+
+See `communinfo-url-alist' for more information."
   (concat "https://cgdb.github.io/docs/"
           (if (string-equal node "Top")
               "cgdb-split.html"

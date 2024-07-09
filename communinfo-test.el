@@ -28,7 +28,7 @@
 (require 'url)
 
 (defun communinfo-test-duplicates (elements)
-  "Calculate list of duplicated elements in given list."
+  "Calculate list of duplicated elements in given list ELEMENTS."
   (let ((seen nil) (duplicates nil))
     (while elements
       (let ((current (car elements)))
@@ -88,4 +88,4 @@ once, should contain `%m' if it's a string."
 
 (provide 'communinfo-test)
 
-;;; communinfo.el ends here
+;;; communinfo-test.el ends here
