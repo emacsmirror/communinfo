@@ -4,7 +4,7 @@
 
 ;; Author: Mekeor Melire <mekeor@posteo.de>
 ;; Created: 2024
-;; Homepage: https://codeberg.org/mekeor/emacs-communinfo
+;; Homepage: https://codeberg.org/mekeor/communinfo
 ;; Keywords: docs
 ;; Maintainer: Mekeor Melire <mekeor@posteo.de>
 ;; Package-Requires: ((emacs "30"))
