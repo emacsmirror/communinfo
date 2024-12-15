@@ -81,6 +81,7 @@ See `communinfo-url-alist' for more information."
     (("gawkinet" "gawkworkflow" "pm-gawk") . "https://gnu.org/s/gawk/manual/%m/html_node/%e")
     (("geiser") . "https://nongnu.org/geiser/%e")
     (("gforth") . "https://www.complang.tuwien.ac.at/forth/%m/Docs-html/%e")
+    (("git-email") . "https://suhail.codeberg.page/%m/%e")
     (("gmp") . "https://www.gmplib.org/manual/%e")
     (("gnu-arch") . "https://gnu.org/s/gnu-arch/tutorial/%e")
     (("gnumach-doc") . "https://gnu.org/s/hurd/gnumach-doc/%e")
