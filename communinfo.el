@@ -9,7 +9,7 @@
 ;; Maintainer: Mekeor Melire <mekeor@posteo.de>
 ;; Package-Requires: ((emacs "30"))
 ;; SPDX-License-Identifier: GPL-3.0-or-later
-;; Version: 0.1.2
+;; Version: 0.1.3
 
 ;; This program is free software; you can redistribute it and/or
 ;; modify it under the terms of the GNU General Public License as
