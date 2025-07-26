@@ -75,6 +75,7 @@ See `communinfo-url-alist' for more information."
     (("atk" "clutter" "clutter-glx" "corba" "gconf" "gdk" "glib" "gnome-vfs" "gobject" "gtk" "libglade" "libgnome" "libgnomecanvas" "libgnomeui" "pango" "pangocairo") . "https://gnu.org/s/guile-gnome/docs/%m/html/%e")
     (("auctex" "preview-latex") . "https://gnu.org/s/auctex/manual/%m/%e")
     (("auth" "autotype" "bovine" "calc" "ccmode" "cl" "dbus" "dired-x" "ebrowse" "ede" "ediff" "edt" "efaq" "efaq-w32" "eglot" "eieio" "eintr" "elisp" "emacs" "emacs-gnutls" "emacs-mime" "epa" "erc" "ert" "eshell" "eudc" "eww" "flymake" "forms" "gnus" "htmlfontify" "idlwave" "ido" "info" "mairix-el" "message" "mh-e" "modus-themes" "newsticker" "nxml-mode" "octave-mode" "org" "pcl-cvs" "pgg" "rcirc" "reftex" "remember" "sasl" "sc" "semantic" "ses" "sieve" "smtpmail" "speedbar" "srecode" "todo-mode" "tramp" "url" "use-package" "vhdl-mode" "vip" "viper" "vtable" "widget" "wisent" "woman") . "https://gnu.org/s/emacs/manual/html_node/%m/%e")
+    (("casual") . "https://kickingvegas.github.io/%m/%e")
     (("cgdb") . communinfo-url-cgdb)
     (("chickadee") . "https://files.dthompson.us/docs/chickadee/latest/%e")
     (("cpp" "cppinternals" "gcc" "gccint" "gfc-internals" "gfortran" "gnat-style" "gnat_rm" "gnat_ugn" "libgomp" "libiberty" "libstdc++") . "https://gcc.gnu.org/onlinedocs/%m/%e")
