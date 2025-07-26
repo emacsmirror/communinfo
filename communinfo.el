@@ -56,6 +56,15 @@ See `communinfo-url-alist' for more information."
               "cgdb-split.html"
             (concat "cgdb-split/" encoded-node))))
 
+(defun communinfo-url-nongnu-elpa (manual node encoded-node)
+  (let ((manual
+         (format "https://elpa.nongnu.org/nongnu/doc/%s/%s.html"
+                 manual manual)))
+    (if (string-equal node "Top")
+        manual
+      (concat manual "#"
+              (string-remove-suffix ".html" encoded-node)))))
+
 (defconst communinfo-url-alist
   '((("3dldf") . "https://gnu.org/s/%m/manual/user_ref/%e")
     (("8sync" "alive" "anubis" "artanis" "autoconf" "autogen" "automake" "bash" "bison" "ccd2cue" "cflow" "chess" "combine" "complexity" "coreutils" "cpio" "dico" "diffutils" "emacs-muse" "g-golf" "gama" "gawk" "gcal" "gettext" "gnubg" "gnubik" "gnulib" "gperf" "grep" "groff" "gsasl" "gsl" "gsrc" "gss" "guile" "guile-rpc" "gv" "gzip" "hello" "idutils" "inetutils" "libextractor" "libidn" "libmicrohttpd" "librejs" "libtasn1" "libtool" "lightning" "liquidwar6" "m4" "mailutils" "make" "mdk" "mes" "parted" "proxyknife" "pspp" "pyconfigure" "rcs" "remotecontrol" "rottlog" "rush" "screen" "sed" "sharutils" "shepherd" "sourceinstall" "sqltutor" "tar" "teseq" "units" "vc-dwim" "wdiff" "websocket4j" "wget" "xboard") . "https://gnu.org/s/%m/manual/html_node/%e")
@@ -72,6 +81,7 @@ See `communinfo-url-alist' for more information."
     (("cuirass") . "https://guix.gnu.org/%m/manual/html_node/%e")
     (("cvs" "gnun" "web-trans") . "https://gnu.org/s/trans-coord/manual/%m/html_node/%e")
     (("easejs" "emms" "gdbm" "gmediaserver" "gnu-crypto" "gnuprologjava" "motti" "recutils" "thales") . "https://gnu.org/s/%m/manual/%e")
+    (("eat") . communinfo-url-nongnu-elpa)
     (("emacs-shroud") . "https://nongnu.org/emacs-shroud/manual/html_node/%e")
     (("emacsy") . "https://nongnu.org/emacsy/manual/html_node/%e")
     (("epkg" "borg") . "https://emacsmirror.net/manual/%m/%e")
