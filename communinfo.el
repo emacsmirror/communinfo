@@ -1,6 +1,6 @@
 ;;; communinfo.el --- Community maintained Info-url-alist  -*- lexical-binding: t; -*-
 
-;; Copyright (C) 2024 Free Software Foundation, Inc.
+;; Copyright (C) 2024-2025 Free Software Foundation, Inc.
 
 ;; Author: Mekeor Melire <mekeor@posteo.de>
 ;; Created: 2024
