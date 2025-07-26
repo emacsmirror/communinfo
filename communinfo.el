@@ -128,7 +128,8 @@ See `communinfo-url-alist' for more information."
     (("pspp-dev") . "https://gnu.org/s/pspp/pspp-dev/html_node/%e")
     (("sawfish") . "https://sawfish.tuxfamily.org/%m.html/%e")
     (("slime") . "https://slime.common-lisp.dev/doc/html/%e")
-    (("zsh") . "https://zsh.sourceforge.io/Doc/Release/%e")))
+    (("zsh") . "https://zsh.sourceforge.io/Doc/Release/%e"))
+  "A community maintained `Info-url-alist', which see.")
 
 (provide 'communinfo)
 
